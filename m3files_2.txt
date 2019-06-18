@@ -1,0 +1,55 @@
+BET
+http://espn.tmedia.me/cache/bet.m3u8
+Animal Planet
+http://80.80.160.168/live/1/live.m3u8
+CBS
+http://161.0.157.50/PLTV/88888888/224/3221227041/03.m3u8
+Classic Arts Showcase
+https://classicarts.global.ssl.fastly.net/live/cas/master_3000k.m3u8
+CMT Music
+http://espn.tmedia.me/cache/cmt.m3u8
+Comedy Central
+http://espn.tmedia.me/cache/cc.m3u8
+Cooking Channel
+http://161.0.157.5/PLTV/88888888/224/3221226201/index.m3u8
+Court TV
+https://content.uplynk.com/channel/92c7be9fb47143a58683d202e321e571.m3u8
+Discovery HD
+http://80.80.160.168/live/8/live.m3u8
+Fox
+http://161.0.157.51/PLTV/88888888/224/3221227013/index.m3u8
+Fox Premium Comedy
+http://161.0.157.9/PLTV/88888888/224/3221226800/index.m3u8
+HBO 2
+http://161.0.157.5/PLTV/88888888/224/3221227026/03.m3u8
+HBO
+http://161.0.157.5/PLTV/88888888/224/3221226127/01.m3u8
+http://161.0.157.5/PLTV/88888888/224/3221226127/02.m3u8
+http://161.0.157.5/PLTV/88888888/224/3221226127/03.m3u8
+HLN
+https://1259541102.rsc.cdn77.org/LS-ATL-54548-7/tracks-v1a1/mono.m3u8
+HSN
+https://html5-lh.akamaihd.net/i/html5_01@182967/master.m3u8
+https://hsn2html5-lh.akamaihd.net/i/hsn2html5_01@13178/master.m3u8
+Investigation Discovery (Discovery)
+http://80.80.160.168/live/5/live.m3u8
+MSNBC
+https://1259541102.rsc.cdn77.org/LS-ATL-54548-15/index.m3u8
+NBC
+http://161.0.157.51/PLTV/88888888/224/3221227040/03.m3u8
+http://161.0.157.51/PLTV/88888888/224/3221227040/index.m3u8
+QVC
+http://qvclvp2.mmdlive.lldns.net/qvclvp2/9aa645c89c5447a8937537011e8f8d0d/manifest.m3u8
+http://qvclvp2.mmdlive.lldns.net/qvclvp2/cd5bfeab75a34ba18301490388fd4daa/manifest.m3u8
+http://qvclvp2.mmdlive.lldns.net/qvclvp2/9aa645c89c5447a8937537011e8f8d0d/chunklist_b4192000.m3u8
+http://qvclvp2.mmdlive.lldns.net/qvclvp2/1af4a53fda904f6c90a4389c8fe92dc0/manifest.m3u8
+http://qvclvp2.mmdlive.lldns.net/qvclvp2/4bc0e8c660c94c00afcdae21479e2b95/chunklist_b4192000.m3u8
+http://qvclvp2.mmdlive.lldns.net/qvclvp2/1af4a53fda904f6c90a4389c8fe92dc0/chunklist_b4192000.m3u8
+TBS
+http://170.250.96.20:8117/streams/TBS.m3u8
+Outdoor Cooking Channel
+http://edge1.tikilive.com:1935/unrestricted_tikilive/25947/amlst:NWKlw6jwyXpz/chunklist_w981409619_b1105254.m3u8
+TLC
+http://80.80.160.168/live/2/live.m3u8
+TV Land
+http://espn.tmedia.me/cache/tvland.m3u8

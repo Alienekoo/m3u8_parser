@@ -1,0 +1,152 @@
+# import iso8601
+import datetime
+import urllib
+import urllib.request
+import http
+
+from typing import Any, Union, Tuple, Dict
+
+import protocol
+
+
+
+class M3dict:
+    # returns a dictionary and input is a m3u8 link.
+    m3url: object
+    status: Union[bool, Tuple[str, Any]]
+
+    def __init__(self, m3url, metad: object = None):
+        self.dict = {}
+        self.m3url = m3url
+        self.url = str(m3url.rpartition('/')[0])
+        self.metad = metad
+        self.requrl = None
+    # for m3u8 files
+    def verifyurl(self) -> object:
+        try:
+            self.requrl = urllib.request.urlopen(self.m3url)
+            return "works1"
+        except (urllib.error.HTTPError, urllib.error.URLError, http.client.HTTPException) as e:
+            if "HTTPError" in str(e):
+                return "Cant open the url. HTTPError ", e.status, datetime.datetime.now()
+            else:
+                return "Cant open the page because the page can not be reached. Error ", datetime.datetime.now()
+    # for .ts files
+    def verifyurlo(self, urlo: object) -> object:
+        """
+
+        :type url: object
+        """
+        try:
+
+            var = urllib.request.urlopen(urlo)
+            return "works1"
+        except (urllib.error.HTTPError, urllib.error.URLError, http.client.HTTPException) as e:
+            if "HTTPError" in str(e):
+                return "Cant open the url. HTTPError ", e.status
+            else:
+                return "Cant open the page because the can not be reached. Error "
+
+    def urlopen(self):
+        if self.verifyurl() == "works1":
+            f = self.requrl
+            myfile = f.read()
+            myfiles = myfile.decode("utf8")
+            return myfiles
+        else:
+            return self.verifyurl()
+
+    def getfiles(self):
+        if "Error" not in self.urlopen():
+            mylineso = self.urlopen()
+            if protocol.extinf in mylineso:
+                # ts file so do the .ts file reading
+
+                if protocol.ext_x_key in mylineso:
+                    if "METHOD=NONE" in mylineso:
+                        # this file has no key so normal .ts file reading
+                        tslist = self.tsread(mylineso)
+                    else:
+                        # it has key so different ts file reading with key
+                        tslist = self.tskeyread(mylineso)
+                else:
+                    # just a .ts file reading
+                    tslist = self.tsread(mylineso)
+
+                self.dict = {}
+                self.dict["tslist"] = tslist
+                self.dict["metadata"] = self.metad
+                return self.dict
+
+            elif protocol.ext_x_stream_inf in mylineso:
+                # m3u8 file so do the .m3u8 file reading
+                # just stream files reading
+                dicto = {}
+                # print("Im in m3u8 file", self.m3url)
+                dicto = self.m3_stream(mylineso)
+                self.dict[self.m3url] = {}
+                self.dict = dicto
+                return self.dict
+            else:
+                # print('check again1 ' + self.m3url)
+                return "The page is empty or cannot be reached.", datetime.datetime.now()
+        else:
+            # print("Error")
+            return self.verifyurl()
+
+    def tsread(self, mylineso):
+        # returns a list of tuples
+        # print("I entered a ts file" + self.m3url)
+        mylines = []
+        mylines = list(map(str.strip, mylineso.split('\n')))
+        ts = []
+        for i in range(len(mylines)):
+            if mylines[i].startswith(protocol.extinf):
+                if mylines[i + 1].startswith("http"):
+                    pass
+                elif mylines[i + 1].startswith(".."):
+                    mylines[i + 1] = self.url + mylines[i + 1].replace("../..", '')
+                else:
+                    mylines[i + 1] = self.url + '/' + mylines[i + 1]
+                status = self.verifyurlo(mylines[i + 1])
+                time = datetime.datetime.now()
+                # print(status)
+                ts.append((mylines[i + 1], time, status))
+        return ts
+
+    def tskeyread(self, mylineso):
+        # returns a list of tuples
+        mylines = []
+        mylines = list(map(str.strip, mylineso.split('\n')))
+        ts = []
+        for i in range(len(mylines)):
+            if mylines[i].startswith(protocol.ext_x_key):
+                key = mylines[i].replace(protocol.ext_x_key, '')
+                status = self.verifyurlo(mylines[i + 2])
+                time = datetime.datetime.now()
+                ts.append((mylines[i + 2], key, time, status))
+        return ts
+
+    def m3_stream(self, mylineso):
+        # returns a dictionary
+        mylines = []
+        dicta = {}
+        mylines = list(map(str.strip, mylineso.split('\n')))
+        # nprint("Im at this m3 " + self.m3url)
+        for i in range(len(mylines)):
+            if mylines[i].startswith(protocol.ext_x_stream_inf):
+                metadata = mylines[i].replace(protocol.ext_x_stream_inf, '').rstrip().split(",")
+                # print("Im also at this m3 " + self.m3url)
+                if mylines[i + 1].startswith("http"):
+                    pass
+                elif mylines[i + 1].startswith(".."):
+                    mylines[i + 1] = self.url + mylines[i + 1].replace("../..", '')
+                else:
+                    mylines[i + 1] = self.url + '/' + mylines[i + 1]
+                # print("I built m3u8 urls too  " + mylines[i + 1])
+                Fire = M3dict(mylines[i + 1], metadata)
+                dicta[mylines[i + 1]] = Fire.getfiles()
+            else:
+                # skipping audio files for now
+                pass
+        return dicta
