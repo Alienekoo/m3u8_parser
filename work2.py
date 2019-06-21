@@ -3,6 +3,7 @@ import datetime
 import urllib
 import urllib.request
 import http
+import re
 
 from typing import Any, Union, Tuple, Dict
 
@@ -21,6 +22,9 @@ class M3dict:
         self.url = str(m3url.rpartition('/')[0])
         self.metad = metad
         self.requrl = None
+    def __init__ (self):
+        pass
+
     # for m3u8 files
     def verifyurl(self) -> object:
         try:
@@ -41,7 +45,7 @@ class M3dict:
 
             var = urllib.request.urlopen(urlo)
             return "works1"
-        except (urllib.error.HTTPError, urllib.error.URLError, http.client.HTTPException) as e:
+        except (urllib.error.HTTPError, urllib.error.URLError, http.client.HTTPException, ValueError) as e:
             if "HTTPError" in str(e):
                 return "Cant open the url. HTTPError ", e.status
             else:
@@ -61,6 +65,7 @@ class M3dict:
             mylineso = self.urlopen()
             if protocol.extinf in mylineso:
                 # ts file so do the .ts file reading
+
 
                 if protocol.ext_x_key in mylineso:
                     if "METHOD=NONE" in mylineso:
@@ -89,7 +94,7 @@ class M3dict:
                 return self.dict
             else:
                 # print('check again1 ' + self.m3url)
-                return "The page is empty or cannot be reached.", datetime.datetime.now()
+                return "Empty_Page", datetime.datetime.now()
         else:
             # print("Error")
             return self.verifyurl()
@@ -118,13 +123,19 @@ class M3dict:
         # returns a list of tuples
         mylines = []
         mylines = list(map(str.strip, mylineso.split('\n')))
+        mylines = self.remove_line(mylines, protocol.ext_x_program_date_time)
         ts = []
         for i in range(len(mylines)):
             if mylines[i].startswith(protocol.ext_x_key):
                 key = mylines[i].replace(protocol.ext_x_key, '')
+                if mylines[i + 2].startswith("http"):
+                    pass
+                elif mylines[i + 2].startswith(".."):
+                    mylines[i + 2] = self.url + mylines[i + 2].replace("../..", '')
+                else:
+                    mylines[i + 2] = self.url + '/' + mylines[i + 2]
                 status = self.verifyurlo(mylines[i + 2])
-                time = datetime.datetime.now()
-                ts.append((mylines[i + 2], key, time, status))
+                ts.append((mylines[i + 2], key, datetime.datetime.now(), status))
         return ts
 
     def m3_stream(self, mylineso):
@@ -150,3 +161,21 @@ class M3dict:
                 # skipping audio files for now
                 pass
         return dicta
+
+    def remove_line(self, mylinesa, pattern):
+        # input: list of lines and the pattern to be searched and removed
+        i = 0
+        pattern = re.compile(pattern)
+        for line in mylinesa:
+            if pattern.match(line):
+                mylinesa.remove(line)
+            i += 1
+        return mylinesa
+
+    def convertdot(self, d):
+        new = {}
+        for k, v in d.items():
+            if isinstance(v, dict):
+                v = self.convertdot(v)
+            new[k.replace('.', '__DOT__')] = v
+        return new

@@ -4,7 +4,6 @@ import work2
 import pymongo
 import re
 
-
 # remove empty lines in the file
 def remove_empty_lines(filename):
     if not os.path.isfile(filename):
@@ -16,6 +15,9 @@ def remove_empty_lines(filename):
     with open(filename, 'w') as filehandle:
         lines = filter(lambda x: x.strip(), lines)
         filehandle.writelines(lines)
+
+
+# remove
 def remove_ABCs(mylinesa):
     i = 0
     pattern = re.compile("^[A-Z]\)\.$")
@@ -24,10 +26,11 @@ def remove_ABCs(mylinesa):
             mylinesa.remove(line)
         i+=1
 
-remove_empty_lines("m3files_2.txt")
+
+remove_empty_lines("m3files.txt")
 a = 0
 mylines, channel, listo = [], [], []
-with open("m3files_2.txt", 'rt') as myfile:
+with open("m3files.txt", 'rt') as myfile:
     for line in myfile:
         mylines.append(line)
 remove_ABCs(mylines)
