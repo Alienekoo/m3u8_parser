@@ -4,12 +4,8 @@ import urllib
 import urllib.request
 import http
 import re
-
 from typing import Any, Union, Tuple, Dict
-
 import protocol
-
-
 
 class M3dict:
     # returns a dictionary and input is a m3u8 link.
@@ -22,8 +18,6 @@ class M3dict:
         self.url = str(m3url.rpartition('/')[0])
         self.metad = metad
         self.requrl = None
-    def __init__ (self):
-        pass
 
     # for m3u8 files
     def verifyurl(self) -> object:
@@ -55,6 +49,7 @@ class M3dict:
         if self.verifyurl() == "works1":
             f = self.requrl
             myfile = f.read()
+            print(myfile)
             myfiles = myfile.decode("utf8")
             return myfiles
         else:

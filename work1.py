@@ -17,37 +17,48 @@ def remove_empty_lines(filename):
         filehandle.writelines(lines)
 
 
-# remove
-def remove_ABCs(mylinesa):
-    i = 0
-    pattern = re.compile("^[A-Z]\)\.$")
+# remove any pattern in the file
+def remove_ABCs(mylinesa, pattern1):
+    pattern = re.compile(pattern1)
     for line in mylinesa:
         if pattern.match(line):
             mylinesa.remove(line)
-        i+=1
+    return  mylinesa
 
+def remove_2ABCs(mylinesa, pattern1):
+    pattern = re.compile(pattern1)
+    for i in range(len(mylinesa)):
+        if pattern.match(mylinesa[i]):
+            mylinesa.remove(mylinesa[i])
+            mylinesa.remove(mylinesa[i-1])
+    return mylinesa
 
-remove_empty_lines("m3files.txt")
+remove_empty_lines("m3files_4.txt")
 a = 0
 mylines, channel, listo = [], [], []
-with open("m3files.txt", 'rt') as myfile:
+with open("m3files_4.txt", 'rt') as myfile:
     for line in myfile:
         mylines.append(line)
-remove_ABCs(mylines)
-if "#EXTINF:-1" in mylines[1]:
+mylines = remove_ABCs(mylines, "^[A-Z]\)\.$")
+mylines = remove_ABCs(mylines, "^#EXTM3U$")
+mylines = remove_2ABCs(mylines, "^http.*\.mp3$")
+if "#EXTINF:-1" in mylines[0] or "#EXTINF:-1" in mylines[1] or "#EXTINF:-1" in mylines[2]:
     for i in range(len(mylines)):
-        if mylines[i].startswith("#EXTINF:-1"):
+        if mylines[i].startswith("#EXTINF:"):
             y = mylines[i].split("group-title=", 1)[1]
             # z = re.findall(r'"(.*?)"', y)
             grp = y.rstrip()
-            ch = channel[a - 1].rstrip()
+            if channel == []:
+                ch = grp.split(",", 1)[1]
+            else:
+                ch = channel[a - 1].rstrip()
             m3u = mylines[i + 1].rstrip()
             # print(ch)
             # print(ch, grp, m3u)
             array2 = []
             array2 = [ch, grp, m3u]
             listo.append(array2)
-        elif mylines[i].startswith("http"):
+        elif mylines[i].startswith("http") or mylines[i].startswith("rtmp") or mylines[i].startswith("mms") or mylines[i].startswith("rtsp"):
             pass
         else:
             channel.append(mylines[i])
@@ -65,7 +76,7 @@ else:
         listo.append(array2)
         i += 1
 print(listo)
-# listo should be 2 dimensional.
+# listo should be 2 dimensional array.
 def dicty(array1):
     new_dict = {}
     for m in range(len(array1)):
@@ -108,7 +119,7 @@ def convertdot(d):
 m3u8d = convertdot(m3u8l)
 print(m3u8d)
 
-myclient = pymongo.MongoClient("mongodb://192.168.5.151:27017/")
+myclient = pymongo.MongoClient("mongodb://192.168.5.157:27017/")
 mydb = myclient["mydatabase"]
 mycol = mydb["m3u8_files"]
 x = mycol.insert_one(m3u8d)
