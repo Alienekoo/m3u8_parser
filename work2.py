@@ -49,7 +49,6 @@ class M3dict:
         if self.verifyurl() == "works1":
             f = self.requrl
             myfile = f.read()
-            print(myfile)
             myfiles = myfile.decode("utf8")
             return myfiles
         else:

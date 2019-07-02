@@ -23,25 +23,25 @@ def remove_ABCs(mylinesa, pattern1):
     for line in mylinesa:
         if pattern.match(line):
             mylinesa.remove(line)
-    return  mylinesa
+    return mylinesa
 
-def remove_2ABCs(mylinesa, pattern1):
+'''def remove_2ABCs(mylinesa, pattern1):
     pattern = re.compile(pattern1)
     for i in range(len(mylinesa)):
         if pattern.match(mylinesa[i]):
             mylinesa.remove(mylinesa[i])
             mylinesa.remove(mylinesa[i-1])
-    return mylinesa
+    return mylinesa'''
 
-remove_empty_lines("m3files_4.txt")
+remove_empty_lines("m3files_13.txt")
 a = 0
 mylines, channel, listo = [], [], []
-with open("m3files_4.txt", 'rt') as myfile:
+with open("m3files_13.txt", 'rt') as myfile:
     for line in myfile:
         mylines.append(line)
 mylines = remove_ABCs(mylines, "^[A-Z]\)\.$")
 mylines = remove_ABCs(mylines, "^#EXTM3U$")
-mylines = remove_2ABCs(mylines, "^http.*\.mp3$")
+# mylines = remove_2ABCs(mylines, "^http.*\.mp3$")
 if "#EXTINF:-1" in mylines[0] or "#EXTINF:-1" in mylines[1] or "#EXTINF:-1" in mylines[2]:
     for i in range(len(mylines)):
         if mylines[i].startswith("#EXTINF:"):
@@ -75,7 +75,7 @@ else:
         array2 = [ch, grp, m3u]
         listo.append(array2)
         i += 1
-print(listo)
+
 # listo should be 2 dimensional array.
 def dicty(array1):
     new_dict = {}
@@ -108,7 +108,6 @@ def dicty(array1):
 
 
 m3u8l = dicty(listo)
-print(m3u8l)
 def convertdot(d):
     new = {}
     for k, v in d.items():
