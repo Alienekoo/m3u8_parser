@@ -16,16 +16,14 @@ https://sima-i.akamaihd.net/hls/live/624111/sima/index.m3u8
 http://66.160.192.250:8080/afn-TVBOXHD.COM/afn/tracks-v1a1/index.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="http://cdn.ipetitions.com/user-images/petitions/objection-to-voa-persian/loz0oZbiRuWlx5csWgCR_VOA_FARSI_LIVESTATION-1.png" group-title="IRAN",VoA
 http://voa-lh.akamaihd.net/i/voapnn_7@72817/master.m3u8
-#EXTINF:-1 tvg-logo="http://iconbug.com/data/7f/256/ffe3a2ec7be0015d10a0b0706b4fd120.png" group-title="LABEL",~ Afghanistan TV ~
-http://www.lengua.com/anthems/Afghanistan.mp3
+
 #EXTINF:-1 tvg-logo="https://i.imgur.com/k2QKhRK.png" group-title="AFGHANISTAN",Ariana TV
 http://d2g7v53450s2i2.cloudfront.net/ATNUS/streamdelay/chunklist_w1314452267.m3u8?fluxustv.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://i.imgur.com/agwQIkl.png" group-title="AFGHANISTAN",Ariana News
 https://d10rltuy0iweup.cloudfront.net/ATNNEWS/myStream/chunklist_w796472816.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://i.imgur.com/hxT2CHm.png" group-title="AFGHANISTAN",Kabul TV
 http://1-fss27-s0.streamhoster.com/lv_kabultv/_definst_/kabultvus/chunklist.m3u8
-#EXTINF:-1 tvg-logo="http://icons.iconarchive.com/icons/custom-icon-design/all-country-flag/256/Malta-Flag-icon.png" group-title="LABEL",~ Malta TV ~
-http://www.lengua.com/anthems/Malta.mp3
+
 #EXTINF:-1 tvg-logo="https://i.imgur.com/XqyfAYX.png" group-title="MALTA",Malta Vision Music TV
 http://www.evoiptv.com/hlsmvtv/hlsmvtv.m3u8?fluxustv.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/JWwj6uk.png" group-title="LABEL",~ 24/7 Arabic News ~
@@ -42,8 +40,7 @@ http://static.france24.com:80/live/F24_AR_HI_HLS/live_tv.m3u8?fluxustv.m3u8
 https://rt-arab.secure.footprint.net/1104-inadv-qidx-1k_v3.m3u8?fluxustv.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://i.imgur.com/iJIHMq9.png" group-title="24/7 ARABIC NEWS",TRT (TR)
 http://trtcanlitv-lh.akamaihd.net/i/TRTARAPCA_1@181945/master.m3u8?fluxustv.m3u8
-#EXTINF:-1 tvg-logo="https://cdn.pixabay.com/photo/2013/07/13/09/55/lebanon-156291_960_720.png" group-title="LABEL",~ Lebanon TV ~
-http://www.lengua.com/anthems/Lebanon.mp3
+
 #EXTINF:-1 tvg-logo="https://i.imgur.com/lCFZbyR.png" group-title="LEBANON",Al Jadeed
 http://livecdnh3.tvanywhere.ae/hls/jadeed/04.m3u8?fluxustv.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="http://www.almanar.com.lb/framework/assets/images/logo-tech.png" group-title="LEBANON",Al Manar (Opt-1)
@@ -62,8 +59,7 @@ http://livecdnh2.tvanywhere.ae/hls/lbc_int/04.m3u8?fluxustv.m3u8
 http://youness-export.com/tv/nbn
 #EXTINF:-1 tvg-logo="https://i.imgur.com/BZAgw1G.png" group-title="LEBANON",OTV
 http://youness-export.com/tv/otv
-#EXTINF:-1 tvg-logo="http://cdn.countryflags.com/thumbs/syria/flag-button-square-250.png" group-title="LABEL",~ Syria TV ~
-http://www.lengua.com/anthems/Syria.mp3
+
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://i.imgur.com/jgWlnl2.png" group-title="SYRIA",Arab News Network
 http://ns8.indexforce.com:1935/ann/ann/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/23rddmS.png" group-title="SYRIA",Syrian Drama TV
@@ -72,12 +68,10 @@ http://www.elahmad.com/tv/m3u8/syriatv.m3u8?id=syria_drama
 http://www.elahmad.com/tv/m3u8/syriatv.m3u8?id=syria_news
 #EXTINF:-1 tvg-logo="https://i.imgur.com/ajsrKzA.png" group-title="SYRIA",Syria TV
 http://82.137.248.16:1935/Sat/stream20112018/playlist.m3u8?fluxustv.m3u8
-#EXTINF:-1 tvg-logo="http://www.expatescort.com/public/img/flags/jo.png" group-title="LABEL",~ Jordan TV  ~
-http://www.lengua.com/anthems/Jordan.mp3
+
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://i.imgur.com/NI6ge2F.png" group-title="JORDAN",Amen FM 89.5
 http://185.27.116.54:1935/live/amn/chunklist_w1521888123.m3u8
-#EXTINF:-1 tvg-logo="http://www.topbandeiras.com.br/images/botoes/Palestine-01.png" group-title="LABEL",~ Palestine TV ~
-http://users.atw.hu/szbszig/palestine.mp3
+
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://i.imgur.com/W7mO4pO.png" group-title="PALESTINE",Al-Aqsa TV
 http://live.aqsatv.ps:1935/aqsatv/live/tv/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/OYdRtzH.png" group-title="PALESTINE",Al-Fajer TV
@@ -90,8 +84,7 @@ http://htvmada.mada.ps:8888/kolalnas/tracks-v1a1/mono.m3u8
 http://vstream3.hadara.ps:8081/MaanHD_web/web/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/6WLMLi6.png" group-title="PALESTINE",Palestine Today
 http://live.paltoday.tv:1935/paltv/live/gmswf.m3u8
-#EXTINF:-1 tvg-logo="http://www.topbandeiras.com.br/images/botoes/Iraq-01.png" group-title="LABEL",~ Iraq TV ~
-http://www.lengua.com/anthems/Iraq.mp3
+
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="http://www.qassimy.com/channel-tv-live/files/image/al_rasheed_tv_iraq_arabic_live_online_free_arabic_channel.png" group-title="IRAQ",Al Rasheed TV
 http://streamer11.elementssys.com:8080/alrashid/alrashid_850kbps/index.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://i.imgur.com/CIdC4D5.png" group-title="IRAQ",Al Sharqiya
@@ -102,16 +95,13 @@ http://mbnhls-lh.akamaihd.net/i/MBN_1@118619/master.m3u8
 http://avenuewtv.srfms.com:1935/avenuewtv/livestream/playlist.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://i.imgur.com/WlqKk7d.png" group-title="IRAQ",Sharqiya News
 http://ns8.indexforce.com:1935/alsharqiyalive/mystream/playlist.m3u8
-#EXTINF:-1 tvg-logo="http://expatescort.com/public/img/flags/sa.png" group-title="LABEL",~ Saudi Arabia TV ~
-http://www.lengua.com/anthems/SaudiArabia.mp3
+
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://i.imgur.com/W9xy2MK.png" group-title="SAUDI ARABIA",Masdar TV
 http://streamer12.elementssys.com:8080/SAUDI-Channels/MASDAR_TV/index.m3u8
-#EXTINF:-1 tvg-logo="https://cdn.countryflags.com/thumbs/bahrain/flag-3d-round-250.png" group-title="LABEL",~ Bahrain TV ~
-http://www.lengua.com/anthems/Bahrain.mp3
+
 #EXTINF:-1 tvg-logo="https://i.imgur.com/rE7AICZ.png" group-title="BAHRAIN",Bahrain Sports
 http://185.105.4.106:1935/live/Bahrain%20Sports/chunklist_w1180161901.m3u8
-#EXTINF:-1 tvg-logo="http://www.oktranslation.cn/images/languages/Arabic.png" group-title="LABEL",~ UAE TV ~
-http://www.lengua.com/anthems/UnitedArabEmirates.mp3
+
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="http://www.addrama.ae/public/img/branding/logo.png" group-title="UAE",Abu Dhabi Drama (Opt-1)
 http://www.elahmad.com/tv/m3u8/adtv.m3u8?id=abudhabi_drama
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="http://www.addrama.ae/public/img/branding/logo.png" group-title="UAE",Abu Dhabi Drama (Opt-2)
@@ -190,8 +180,7 @@ http://livecdnh1.tvanywhere.ae/hls/star_world/index.m3u8?fluxustv.m3u8
 http://livecdnh1.tvanywhere.ae/hls/star_world/05.m3u8?fluxustv.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://i.imgur.com/jD1HjhK.png" group-title="UAE",YAS Sports
 http://adtv.ercdn.net/adsportextra/adsportextra_720p.m3u8
-#EXTINF:-1 tvg-logo="http://cdn.countryflags.com/thumbs/qatar/flag-button-square-250.png" group-title="LABEL",~ Qatar TV ~
-http://www.lengua.com/anthems/Qatar.mp3
+
 #EXTINF:-1 tvg-logo="https://i.imgur.com/DBJTZaS.png" group-title="QATAR",Al Jazeera (Opt-1)
 http://aljazeera-ara-apple-live.adaptive.level3.net/apple/aljazeera/arabic/800.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/DBJTZaS.png" group-title="QATAR",Al Jazeera (Opt-2)
@@ -214,8 +203,7 @@ http://www.elahmad.com/tv/m3u8/alkass.m3u8?id=alkass3
 http://www.elahmad.com/tv/m3u8/alkass.m3u8?id=alkass4
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://i.imgur.com/ThVbcVq.png" group-title="QATAR",Al Kass Sports 5
 http://www.elahmad.com/tv/m3u8/alkass.m3u8?id=alkass5
-#EXTINF:-1 tvg-logo="http://expatescort.com/public/img/flags/kw.png" group-title="LABEL",~ Kuwait TV ~
-http://www.lengua.com/anthems/Kuwait.mp3
+
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://i.imgur.com/OxHG4BE.png" group-title="KUWAIT",Al Majlis
 https://svs.itworkscdn.net/ktvalmajlislive/kalmajlis.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://i.imgur.com/gYinDZ4.png" group-title="KUWAIT",Al Rai
@@ -234,18 +222,14 @@ https://svs.itworkscdn.net/ktvarabelive/karabe.smil/playlist.m3u8
 https://svs.itworkscdn.net/ktvpluslive/kplus.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://i.imgur.com/j13oDDt.png" group-title="KUWAIT",KTV Sport
 http://www.elahmad.com/tv/m3u8/ktv.m3u8?id=ktv3
-#EXTINF:-1 tvg-logo="https://cdn.countryflags.com/thumbs/egypt/flag-round-250.png" group-title="LABEL",~ Egypt TV ~
-http://www.lengua.com/anthems/Egypt.mp3
 #EXTINF:-1 tvg-logo="https://i.imgur.com/tFAg2dY.png" group-title="EGYPT",Mekameleen TV
 https://mn-nl.mncdn.com/mekameleen/smil:mekameleentv.smil/chunklist_b1800000.m3u8?__mn_sid=6592483289574006816
-#EXTINF:-1 tvg-logo="http://towers.com.ua/style/img/flags/tunisia.png" group-title="LABEL",~ Tunisia TV ~
-http://www.lengua.com/anthems/Tunisia.mp3
+
 #EXTINF:-1 tvg-logo="https://i.imgur.com/cZM2t0P.png" group-title="TUNISIA",Tunisie Immobilier TV (Opt-1)
 http://serv30.vintera.tv:8081/africa/tunisieimmob/chunks.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/cZM2t0P.png" group-title="TUNISIA",Tunisie Immobilier TV (Opt-2)
 https://5ac31d8a4c9af.streamlock.net/tunimmob/myStream/chunklist.m3u8
-#EXTINF:-1 tvg-logo="http://www.topbandeiras.com.br/images/botoes/Libya%20(New)-01.png" group-title="LABEL",~ Libya TV ~
-http://www.lengua.com/anthems/Libya.mp3
+
 #EXTINF:-1 tvg-logo="https://i.imgur.com/0OzJkwp.png" group-title="LIBYA",218 News
 http://95.85.47.43/libya218news/tracks-v1a1/mono.m3u8
 #EXTINF:-1 tvg-logo="http://www.libyaelwatan.com/wp-content/uploads/2017/05/logo-200.png" group-title="LIBYA",Al Watan
@@ -258,12 +242,10 @@ http://streamer11.elementssys.com:8080/demo/rasmyah/index.m3u8
 http://starmena.ercdn.net/libyaschannel/libyaschannel_480p.m3u8
 #EXTINF:-1 tvg-logo="https://3.bp.blogspot.com/-nnjDRq29LMQ/WT1nt5kQkqI/AAAAAAAAGhE/z3sTCTwGgEo5CXqLDR0UyZ1vdXG_Xm6ZgCLcB/s1600/libyas_channel_jo.png" group-title="LIBYA",Libya's Channel (Opt-2)
 http://1599780955@starmena.ercdn.net/libyaschannel/libyaschannel.m3u8
-#EXTINF:-1 tvg-logo="https://cdn.countryflags.com/thumbs/algeria/flag-3d-round-250.png" group-title="LABEL",~ Algeria TV ~
-http://www.lengua.com/anthems/Algeria.mp3
+
 #EXTINF:-1 tvg-logo="https://i.imgur.com/pOqWMFq.png" group-title="ALGERIA",Amel TV
 http://stream.mslive.in:1935/jazz/gcb577/chunklist.m3u8
-#EXTINF:-1 tvg-logo="http://www.topbandeiras.com.br/images/botoes/Morocco-01.png" group-title="LABEL",~ Morocco TV ~
-http://www.lengua.com/anthems/Morocco.mp3
+
 #EXTINF:-1 tvg-logo="https://i.imgur.com/AkaQgUi.png" group-title="MOROCCO",2M Monde
 https://cdnamd-hls-globecast.akamaized.net/live/ramdisk/2m_monde/hls_video_ts/2m_monde.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://i.imgur.com/176K3Iz.png" group-title="MOROCCO",Alaoula (Opt-1)
@@ -290,16 +272,13 @@ https://streaming.medi1tv.com/live/Medi1tvmaghreb.sdp/playlist.m3u8?fluxustv.m3u
 https://streaming.medi1tv.com/live/Medi1tvAfrique.sdp/playlist.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://i.imgur.com/B8tF1jJ.png" group-title="MOROCCO",Tamazight
 http://cdn-hls.globecast.tv/live/ramdisk/tamazight_tv8_snrt/hls_snrt/index.m3u8
-#EXTINF:-1 tvg-logo="http://kushsudan.org/wp-content/uploads/2017/05/flag-3d-round-250.png" group-title="LABEL",~ Sudan TV ~
-http://www.lengua.com/anthems/Sudan.mp3
+
 #EXTINF:-1 tvg-logo="https://i.imgur.com/EU1hg2w.png" group-title="SUDAN",New Africa TV Hausa
 http://new.holol.com:1935/tayba/africah/playlist.m3u8
-#EXTINF:-1 tvg-logo="http://www.jjcornish.com/wp-content/uploads/2014/05/Western-Sahara.png" group-title="LABEL",~ West Sahara TV ~
-http://www.lengua.com/anthems/WestSahara.mp3
+
 #EXTINF:-1 tvg-logo="https://i.imgur.com/mcF4XDr.png" group-title="WEST SAHARA",Rasd TV
 https://593fa17dec176.streamlock.net/rasdtv/rasdtv/chunklist.m3u8
-#EXTINF:-1 tvg-logo="https://cdn.countryflags.com/thumbs/somalia/flag-round-250.png" group-title="LABEL",~ Somalia TV ~
-http://www.lengua.com/anthems/Somalia.mp3
+
 #EXTINF:-1 tvg-logo="https://i.imgur.com/71UKcdB.png" group-title="SOMALIA",Horn Cable TV
 http://cdn.mediavisionuae.com:1935/live/hctvlive.stream/chunklist.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/sF00ODA.png" group-title="SOMALIA",Jubbaland TV
@@ -312,26 +291,21 @@ http://cdn01.iqbroadcast.tv:8081/g1/saabtv/chunks.m3u8
 http://62.210.251.188:1935/live/sbctv.stream/chunklist.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/0dMA2Ux.png" group-title="SOMALIA",Universal TV
 https://5928f90056f31.streamlock.net/universal-live/universal/chunklist.m3u8
-#EXTINF:-1 tvg-logo="https://cdn.countryflags.com/thumbs/ethiopia/flag-3d-round-250.png" group-title="LABEL",~ Ethiopia TV ~
-http://www.lengua.com/anthems/Ethiopia.mp3
+
 #EXTINF:-1 tvg-logo="https://i.imgur.com/KAg6MOI.png" group-title="ETHIOPIA",Addis TV
 https://rrsatrtmp.tulix.tv/addis1/addis1multi.smil/playlist.m3u8
-#EXTINF:-1 tvg-logo="https://cdn.countryflags.com/thumbs/kenya/flag-round-250.png" group-title="LABEL",~ Kenya TV ~
-http://www.lengua.com/anthems/Kenya.mp3
 #EXTINF:-1 tvg-logo="https://i.imgur.com/qLIHrRX.png" group-title="KENYA",Citizen TV
 https://vidhttps.r.worldssl.net/citizentv-origin/liveabr/citizentv-origin/live2/chunks.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/IeGG2mY.png" group-title="KENYA",Inooro TV
 https://vidhttps.r.worldssl.net/inoorotv-origin/liveabr/inoorotv-origin/live3/chunks.m3u8
-#EXTINF:-1 tvg-logo="https://cdn.countryflags.com/thumbs/philippines/flag-3d-round-250.png" group-title="LABEL",~ Philipines TV ~
-http://www.lengua.com/anthems/Philipines.mp3
+
 #EXTINF:-1 tvg-logo="https://i.imgur.com/ylgQY9Y.png" group-title="PHILIPPINES",Channel 5
 http://stream1.news5.ph/n5e/tv5_2/chunklist_w1942959991.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/P8gVkEZ.png" group-title="PHILIPPINES",CNN Philippines
 http://df7lqp0btxdx2.cloudfront.net/11227_500.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/ML9niVH.png" group-title="PHILIPPINES",TeleNovela Channel
 http://210.210.155.35/x6bnqe/s/s81/index2.m3u8
-#EXTINF:-1 tvg-logo="http://jasatamadm.com/img/team/my.jpg" group-title="LABEL",~ Malaysia TV ~
-http://www.lengua.com/anthems/Malaysia.mp3
+
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://upload.wikimedia.org/wikipedia/en/b/b8/Aniplus_Asia_Logo.png" group-title="MALAYSIA",Aniplus (Opt-1)
 http://210.210.155.35/session/878a9ae4-7e3d-11e8-a850-b82a72d63267/uq2663/h/h02/01.m3u8?thebestfreeenglishchannels.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://upload.wikimedia.org/wikipedia/en/b/b8/Aniplus_Asia_Logo.png" group-title="MALAYSIA",Aniplus (Opt-2)
@@ -384,8 +358,7 @@ http://stream-02.sg1.dailymotion.com/dm/3/x6qqja6/live-1.m3u8?fluxustv.m3u8
 http://stream-02.sg1.dailymotion.com/dm/3/x6qqja6/live-3.m3u8?fluxustv.m3u8
 #EXTINF:-1 tvg-logo="http://4.bp.blogspot.com/-f2_BOzELGR4/VM5joggTjJI/AAAAAAAARW0/yUrqsfUiS1c/s1600/TV9%2BMalaysia%2BOnline%2BLive%2BStreaming.gif" group-title="MALAYSIA",TV9 (Opt-3)
 http://stream-02.sg1.dailymotion.com/dm/3/x6qqja6/live.m3u8?fluxustv.m3u8
-#EXTINF:-1 tvg-logo="http://www.topbandeiras.com.br/images/botoes/Indonesia-01.png" group-title="LABEL",~ Indonesia TV ~
-http://www.lengua.com/anthems/Indonesia.mp3
+
 #EXTINF:-1 tvg-logo="http://dojo-box.com/wp-content/uploads/2015/09/logo-aditv.png" group-title="INDONESIA",ADiTV
 http://aditv.onlivestreaming.net/aditv/livestream/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/5EtJenC.jpg" group-title="INDONESIA",Astro Arena
@@ -500,8 +473,7 @@ http://ott.tvri.co.id/Content/HLS/Live/Channel(TVRIKalselbanjarmsn)/index.m3u8
 http://ott.tvri.co.id/Content/HLS/Live/Channel(TVRIKalteng)/index.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/O3pDm4l.png" group-title="INDONESIA",TVRI Sport
 http://210.210.155.35/session/8dc2906e-1a3d-11e9-b2c3-8aac890eb9f3/qwr9ew/s/s48/index.m3u8?fluxustv.m3u8
-#EXTINF:-1 tvg-logo="http://expatescort.com/public/img/flags/th.png" group-title="LABEL",~ Thailand TV ~
-http://www.lengua.com/anthems/Thailand.mp3
+
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="http://thumbnail.instardara.com/channel/BlueSky.jpg" group-title="THAILAND",Bluesky Channel
 http://live.blueskychannel.tv:1935/bluesky_live/myStream/playlist.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="http://www.digitalinsider.co.th/Apps/TT/Images/cabletv.png" group-title="THAILAND",Cable TV

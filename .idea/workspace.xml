@@ -2,8 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="97b92c77-1b1c-4d4e-a21b-aee0ba05f8ad" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/m3files_14.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/m3files_10.txt" beforeDir="false" afterPath="$PROJECT_DIR$/m3files_10.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/m3files_11.txt" beforeDir="false" afterPath="$PROJECT_DIR$/m3files_11.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/m3files_12.txt" beforeDir="false" afterPath="$PROJECT_DIR$/m3files_12.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/m3files_13.txt" beforeDir="false" afterPath="$PROJECT_DIR$/m3files_13.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/m3files_5.txt" beforeDir="false" afterPath="$PROJECT_DIR$/m3files_5.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/m3files_6.txt" beforeDir="false" afterPath="$PROJECT_DIR$/m3files_6.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/m3files_7.txt" beforeDir="false" afterPath="$PROJECT_DIR$/m3files_7.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/work1.py" beforeDir="false" afterPath="$PROJECT_DIR$/work1.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/work2.py" beforeDir="false" afterPath="$PROJECT_DIR$/work2.py" afterDir="false" />
     </list>
@@ -18,8 +25,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/work1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="471">
-              <caret line="124" lean-forward="true" selection-start-line="124" selection-end-line="124" />
+            <state relative-caret-position="-1088">
+              <caret line="33" column="22" lean-forward="true" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -30,8 +37,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/work2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="150" column="23" selection-start-line="150" selection-start-column="18" selection-end-line="150" selection-end-column="23" />
+            <state relative-caret-position="1305">
+              <caret line="87" column="32" selection-start-line="87" selection-start-column="32" selection-end-line="87" selection-end-column="32" />
               <folding>
                 <element signature="e#17#32#0" expanded="true" />
               </folding>
@@ -40,19 +47,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/m3files_4.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="945">
-              <caret line="63" column="38" selection-start-line="63" selection-start-column="38" selection-end-line="63" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/m3files_13.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1605">
-              <caret line="107" column="40" selection-start-line="107" selection-start-column="37" selection-end-line="107" selection-end-column="40" />
+            <state relative-caret-position="1140">
+              <caret line="76" column="62" selection-start-line="76" selection-start-column="62" selection-end-line="76" selection-end-column="62" />
             </state>
           </provider>
         </entry>
@@ -60,8 +58,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/m3files_5.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="11070">
-              <caret line="738" selection-start-line="738" selection-end-line="738" />
+            <state relative-caret-position="5475">
+              <caret line="365" column="33" selection-start-line="365" selection-start-column="33" selection-end-line="365" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/m3files_12.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2249">
+              <caret line="324" selection-start-line="324" selection-end-line="324" />
             </state>
           </provider>
         </entry>
@@ -69,8 +76,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/m3files_11.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5070">
-              <caret line="338" selection-start-line="338" selection-end-line="338" />
+            <state relative-caret-position="178">
+              <caret line="80" column="23" selection-start-line="80" selection-start-column="23" selection-end-line="80" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -78,8 +85,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/m3files_10.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15285">
-              <caret line="1019" column="64" selection-start-line="1019" selection-start-column="64" selection-end-line="1019" selection-end-column="64" />
+            <state relative-caret-position="14580">
+              <caret line="972" selection-start-line="972" selection-end-line="972" />
             </state>
           </provider>
         </entry>
@@ -96,8 +103,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/m3files_7.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="7605">
-              <caret line="507" column="48" selection-start-line="507" selection-start-column="48" selection-end-line="507" selection-end-column="48" />
+            <state relative-caret-position="270">
+              <caret line="18" selection-start-line="18" selection-end-line="18" />
             </state>
           </provider>
         </entry>
@@ -105,8 +112,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/m3files_6.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="12615">
-              <caret line="841" column="89" selection-start-line="841" selection-start-column="89" selection-end-line="841" selection-end-column="89" />
+            <state relative-caret-position="6945">
+              <caret line="463" column="65" selection-start-line="463" selection-start-column="65" selection-end-line="463" selection-end-column="65" />
             </state>
           </provider>
         </entry>
@@ -125,14 +132,16 @@
       <find>BELGIUM</find>
       <find>ICARO</find>
       <find>Global Sanjh</find>
-      <find>rtmp</find>
       <find>rtsp</find>
       <find>mms</find>
-      <find>mp3</find>
       <find>cbs</find>
       <find>ott</find>
       <find>http://cbsnewshd-lh.akamaihd.net</find>
       <find>print</find>
+      <find>rtmp</find>
+      <find>mp3</find>
+      <find>webmobile.xdev.r</find>
+      <find>vms</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -150,17 +159,18 @@
         <option value="$PROJECT_DIR$/m3files_2.txt" />
         <option value="$PROJECT_DIR$/fakework1.py" />
         <option value="$PROJECT_DIR$/m3files_3.txt" />
-        <option value="$PROJECT_DIR$/m3files_6.txt" />
-        <option value="$PROJECT_DIR$/m3files_7.txt" />
         <option value="$PROJECT_DIR$/m3files_8.txt" />
         <option value="$PROJECT_DIR$/m3files_9.txt" />
-        <option value="$PROJECT_DIR$/m3files_10.txt" />
-        <option value="$PROJECT_DIR$/m3files_11.txt" />
         <option value="$PROJECT_DIR$/m3files_4.txt" />
-        <option value="$PROJECT_DIR$/m3files_5.txt" />
-        <option value="$PROJECT_DIR$/m3files_13.txt" />
-        <option value="$PROJECT_DIR$/work1.py" />
         <option value="$PROJECT_DIR$/work2.py" />
+        <option value="$PROJECT_DIR$/m3files_13.txt" />
+        <option value="$PROJECT_DIR$/m3files_10.txt" />
+        <option value="$PROJECT_DIR$/m3files_7.txt" />
+        <option value="$PROJECT_DIR$/m3files_6.txt" />
+        <option value="$PROJECT_DIR$/m3files_11.txt" />
+        <option value="$PROJECT_DIR$/m3files_5.txt" />
+        <option value="$PROJECT_DIR$/m3files_12.txt" />
+        <option value="$PROJECT_DIR$/work1.py" />
       </list>
     </option>
   </component>
@@ -302,13 +312,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="70" y="27" width="1850" height="957" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.11658456" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32886723" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.21680877" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.48964676" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3995128" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -322,12 +333,12 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.11658456" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.11658456" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32886723" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.21680877" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.9451888" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3995128" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -444,9 +455,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/m3files_12.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/m3files_4.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="945">
@@ -454,31 +462,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/m3files_14.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/m3files_13.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1605">
-          <caret line="107" column="40" selection-start-line="107" selection-start-column="37" selection-end-line="107" selection-end-column="40" />
+        <state relative-caret-position="1140">
+          <caret line="76" column="62" selection-start-line="76" selection-start-column="62" selection-end-line="76" selection-end-column="62" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/m3files_5.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="11070">
-          <caret line="738" selection-start-line="738" selection-end-line="738" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/m3files_11.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5070">
-          <caret line="338" selection-start-line="338" selection-end-line="338" />
+        <state relative-caret-position="5475">
+          <caret line="365" column="33" selection-start-line="365" selection-start-column="33" selection-end-line="365" selection-end-column="33" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/m3files_10.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15285">
-          <caret line="1019" column="64" selection-start-line="1019" selection-start-column="64" selection-end-line="1019" selection-end-column="64" />
+        <state relative-caret-position="14580">
+          <caret line="972" selection-start-line="972" selection-end-line="972" />
         </state>
       </provider>
     </entry>
@@ -491,32 +495,46 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/m3files_7.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7605">
-          <caret line="507" column="48" selection-start-line="507" selection-start-column="48" selection-end-line="507" selection-end-column="48" />
+        <state relative-caret-position="270">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/m3files_6.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="12615">
-          <caret line="841" column="89" selection-start-line="841" selection-start-column="89" selection-end-line="841" selection-end-column="89" />
+        <state relative-caret-position="6945">
+          <caret line="463" column="65" selection-start-line="463" selection-start-column="65" selection-end-line="463" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/m3files_11.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="80" column="23" selection-start-line="80" selection-start-column="23" selection-end-line="80" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/work2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="150" column="23" selection-start-line="150" selection-start-column="18" selection-end-line="150" selection-end-column="23" />
+        <state relative-caret-position="1305">
+          <caret line="87" column="32" selection-start-line="87" selection-start-column="32" selection-end-line="87" selection-end-column="32" />
           <folding>
             <element signature="e#17#32#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/m3files_12.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2249">
+          <caret line="324" selection-start-line="324" selection-end-line="324" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/work1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="471">
-          <caret line="124" lean-forward="true" selection-start-line="124" selection-end-line="124" />
+        <state relative-caret-position="-1088">
+          <caret line="33" column="22" lean-forward="true" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>

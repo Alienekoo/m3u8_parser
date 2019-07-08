@@ -33,10 +33,10 @@ def remove_ABCs(mylinesa, pattern1):
             mylinesa.remove(mylinesa[i-1])
     return mylinesa'''
 
-remove_empty_lines("m3files_13.txt")
+remove_empty_lines("m3files_12.txt")
 a = 0
 mylines, channel, listo = [], [], []
-with open("m3files_13.txt", 'rt') as myfile:
+with open("m3files_12.txt", 'rt') as myfile:
     for line in myfile:
         mylines.append(line)
 mylines = remove_ABCs(mylines, "^[A-Z]\)\.$")
@@ -101,13 +101,13 @@ def dicty(array1):
                 # print(m32)
                 dicta = work2.M3dict(m31)
                 new_dict[cha][gt][m31] = dicta.getfiles()
-                # print(m31)
-
+                print(m31)
 
     return new_dict
 
 
 m3u8l = dicty(listo)
+
 def convertdot(d):
     new = {}
     for k, v in d.items():

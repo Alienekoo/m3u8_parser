@@ -95,7 +95,7 @@ class M3dict:
 
     def tsread(self, mylineso):
         # returns a list of tuples
-        # print("I entered a ts file" + self.m3url)
+        print("I entered a ts file")
         mylines = []
         mylines = list(map(str.strip, mylineso.split('\n')))
         ts = []
@@ -137,7 +137,7 @@ class M3dict:
         mylines = []
         dicta = {}
         mylines = list(map(str.strip, mylineso.split('\n')))
-        # nprint("Im at this m3 " + self.m3url)
+        print("Im at this m3 " + self.m3url)
         for i in range(len(mylines)):
             if mylines[i].startswith(protocol.ext_x_stream_inf):
                 metadata = mylines[i].replace(protocol.ext_x_stream_inf, '').rstrip().split(",")

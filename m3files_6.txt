@@ -470,8 +470,6 @@ http://trtcanlitv-lh.akamaihd.net/i/TRTSPOR1_1@182042/master.m3u8
 http://trtcanlitv-lh.akamaihd.net/i/TRTTURK_1@182144/master.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://i.imgur.com/6Spy5VG.png" group-title="TURKEY",Vuslat TV
 http://yayin3.canlitv.com:1935/live/vuslattv/playlist.m3u8
-#EXTINF:-1 tvg-logo="http://img.freeflagicons.com/thumb/round_icon/azerbaijan/azerbaijan_640.png" group-title="LABEL",~ Azerbaijan TV ~
-http://www.lengua.com/anthems/Azerbaijan.mp3
 #EXTINF:-1 tvg-logo="https://i.imgur.com/qNUee8h.png" group-title="AZERBAIJAN",Azad Azerbaijan TV
 http://85.132.81.184:8080/atv/index.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="http://www.cbcsport.tv/upload/img/live.png" group-title="AZERBAIJAN",CBC Sport
@@ -480,8 +478,7 @@ http://s69362.cdn.ngenix.net/live/_definst_/Stream1/chunklist.m3u8
 http://85.132.81.184:8080/arbkepez/live/index.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="http://www.myvideo.az/v3_imgs/tv/tv_muztv_100.jpg" group-title="AZERBAIJAN",MUZ TV
 http://85.132.78.6:1935/live/muztv.stream/younessiptv.m3u8
-#EXTINF:-1 tvg-logo="https://cdn2.iconfinder.com/data/icons/world-flag-icons/256/Flag_of_Kurdistan_Nation.png" group-title="LABEL",~ Kurdistan TV ~
-http://www.lengua.com/anthems/Kurdistan.mp3
+
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="http://i64.tinypic.com/rawwhe.png" group-title="KURDISTAN",Kurdistan TV
 http://84.244.187.12:1935/live/livestream/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/JLWqFnN.png" group-title="KURDISTAN",Cihan
@@ -498,8 +495,7 @@ http://livestreaming.itworkscdn.net/rudawlive/rudawtv_360p/playlist.m3u8
 http://speda.teradek.live:1935/live/spedahd/playlist.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="http://oklivetv.com/wp-content/uploads/2015/05/ltrt6_b.png" group-title="KURDISTAN",TRT Kurdi
 http://trtcanlitv-lh.akamaihd.net/i/TRT6_1@181944/master.m3u8
-#EXTINF:-1 tvg-logo="https://pbs.twimg.com/profile_images/493882319854653440/IS5djWg6.jpeg" group-title="LABEL",~ Israel TV ~
-http://www.lengua.com/anthems/Israel.mp3
+
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Arutz_20.svg/220px-Arutz_20.svg.png" group-title="ISRAEL",Channel 20
 http://live.ch20-cdnwiz.com/ch20-abr/ch20-abr/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/he/thumb/7/78/Ch2news_il.svg/1280px-Ch2news_il.svg.png" group-title="ISRAEL",HaHadashot 12 (Opt-1)
@@ -524,28 +520,23 @@ http://nana10-hdl-uk.ctedgecdn.net/Nana10-Live/amlst:hd_,500,1000,1200,2400,/pla
 http://nana10-hdl-uk.ctedgecdn.net/Nana10-Live/amlst:hd_,1000,1500,1800,/playlist.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="http://midot.co.il/wp-content/uploads/2013/12/185.png" group-title="ISRAEL",Shopping Channel (Opt-1)
 http://82.80.192.30/shoppingil_ShoppingIL21TVRepeat/_definst_/smil:ShoppingIL21TV.smil/chunklist_w2043660694_b2128000.m3u8?ttl=1524643697&cdn_token=5a6c4f1270440ae72118c8ae16c58de4
-#EXTINF:-1 tvg-logo="https://cdn.countryflags.com/thumbs/myanmar/flag-button-square-250.png" group-title="LABEL",~ Myanmar TV ~
-http://www.lengua.com/anthems/Myanmar.mp3
+
 #EXTINF:-1 tvg-logo="http://www.forevergroup.com.mm/assets/images/channel/channel7.png" group-title="MYANMAR",Channel 7
 http://104275ooyala-lh.akamaihd.net/i/forevergroup_03@449367/master.m3u8?fluxustv.m3u8
 #EXTINF:-1 tvg-logo="https://i.malimarcdn.com/MyanmarMaharBawdiHD.jpg" group-title="MYANMAR",Mahar Bawdi
 http://104275ooyala-lh.akamaihd.net/i/forevergroup_01@449365/master.m3u8?fluxustv.m3u8
 #EXTINF:-1 tvg-logo="http://static.pyoneplay.com/static/channel/ch_thumb_1525319199.png" group-title="MYANMAR",MRTV-4
 http://104275ooyala-lh.akamaihd.net/i/forevergroup_02@449366/master.m3u8?fluxustv.m3u8
-#EXTINF:-1 tvg-logo="http://files.softicons.com/download/web-icons/asia-flags-icons-by-studiotwentyeight/png/256/Nepal.png" group-title="LABEL",~ Nepal TV ~
-http://www.lengua.com/anthems/Nepal.mp3
+
 #EXTINF:-1 tvg-logo="http://gyangun.com/wp-content/uploads/2016/06/ntv.jpg" group-title="NEPAL",Nepali TV
 http://live.zecast.net/ntvglobal/nepalitv/chunklist.m3u8
-#EXTINF:-1 tvg-logo="http://icons.iconarchive.com/icons/custom-icon-design/round-world-flags/512/Sri-lanka-icon.png" group-title="LABEL",~ Sri Lanka TV ~
-http://www.lengua.com/anthems/SriLanka.mp3
+
 #EXTINF:-1 tvg-logo="http://www.asiaexhibition.lk/images/partners/partner%20logo%20hiru.jpg" group-title="SRI LANKA",Hiru TV
 http://cdncities.com/8012/8012/playlist.m3u8
 #EXTINF:0 tvg-logo="http://upload.wikimedia.org/wikipedia/si/8/88/ITN_TV_Sri_Lanka.png" group-title="SRI LANKA",ITN
 http://cdncities.com/itndvr2/itndvr2/playlist.m3u8
 #EXTINF:0 tvg-logo="https://vignette.wikia.nocookie.net/boboiboy/images/8/8e/Sri_Lanka_Rupavahini_Corporation-Logo.png" group-title="SRI LANKA",Rupavahini TV
 http://dammikartmp.tulix.tv/slrc1/slrc1/chunklist_w747273608.m3u8
-#EXTINF:-1 tvg-logo="http://expatescort.com/public/img/flags/in.png" group-title="LABEL",~ India TV ~
-http://www.lengua.com/anthems/India.mp3
 #EXTINF:-1 tvg-logo="http://www.1yestv.com/images/logo.png" group-title="INDIA",1 Yes TV
 http://150.242.21.2/oneyes.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/k9M5ydW.png" group-title="INDIA",5aab TV
@@ -746,8 +737,6 @@ http://210.210.155.35/qwr9ew/s/s32/01.m3u8?fluxustv.m3u8
 http://161.0.157.5/PLTV/88888888/224/3221226709/index.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/wO37nXB.png" group-title="INDIA",Zee World
 http://161.0.157.5/PLTV/88888888/224/3221226542/index.m3u8
-#EXTINF:-1 tvg-logo="http://www.pakistantv.tv/wp-content/uploads/2014/10/Pakistan-icon1.png" group-title="LABEL",~ Pakistan TV ~
-http://www.lengua.com/anthems/Pakistan.mp3
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="http://www.citysearch.pk/UF/Companies/5956/7news-tv-logo.png" group-title="PAKISTAN",7 News
 http://cdn2.mjunoon.tv:25461/live/CDN/MJUNOON/10.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://en.dailypakistan.com.pk/wp-content/uploads/2016/02/App-Icon.jpg" group-title="PAKISTAN",24 News
@@ -794,8 +783,6 @@ http://samaatr.videocdn.scaleengine.net/samaatr-live/play/samaatr.stream/playlis
 http://cdn61.liveonlineservices.com/hls/subrang.m3u8?fluxustv.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="http://i65.tinypic.com/2hoemb9.png" group-title="PAKISTAN",Tez
 http://stream.jeem.tv/geo/geotezz/playlist.m3u8
-#EXTINF:-1 tvg-logo="http://www.topbandeiras.com.br/images/botoes/Iran-01.png" group-title="LABEL",~ Iran TV ~
-http://www.lengua.com/anthems/Iran.mp3
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://iran-livetv.com/uploads/thumbs/bf1a14b7d-1.jpg" group-title="IRAN",Andisheh TV
 http://livestream.5centscdn.com/cls090117/49ead3a7c6432c5358a086d078110c16.sdp/index.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://i.imgur.com/Wxf4Q92.jpg" group-title="IRAN",Apadana TV
