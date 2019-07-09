@@ -152,7 +152,8 @@ class M3dict:
                     mylines[i + 1] = self.url + '/' + mylines[i + 1]
                 # print("I built m3u8 urls too  " + mylines[i + 1])
                 if mylines[i + 1] not in self.look_up_set:
-                    Fire = M3dict(mylines[i + 1], metadata)
+                    self.look_up_set.add(mylines[i+1])
+                    Fire = M3dict(mylines[i + 1], self.look_up_set, metadata)
                     dicta[mylines[i + 1]] = Fire.getfiles()
             else:
                 # skipping audio files for now
