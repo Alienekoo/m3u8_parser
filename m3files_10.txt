@@ -48,8 +48,6 @@ http://livestreams.br.de/i/bfssued_germany@119890/master.m3u8
 http://iptvcodes.blogspot.com@62.113.210.250/medienasa-live/ok-wernigerode_high/hasbahca.m3u8?bitrate=800
 #EXTINF:-1 tvg-logo="https://i.imgur.com/VTCCMrn.png" group-title="GERMANY",Chemnitz Fernsehen
 http://chemnitz.iptv-playoutcenter.de:1935/chemnitz/chemnitzfernsehen.stream_2/playlist.m3u8
-#EXTINF:-1 tvg-logo="https://i.imgur.com/7wABSuo.png" group-title="GERMANY",Das Erste
-https://mcdn.daserste.de/daserste/de/profile1/index.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://i.imgur.com/rR44kv4.png" group-title="GERMANY",DASDING 90.8 FM Stuttgart
 http://swrdasding-lh.akamaihd.net/i/dasdingvisual_live@6416/index_1800_av-p.m3u8
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/DeluxeMusic2013.svg/220px-DeluxeMusic2013.svg.png" group-title="GERMANY",Deluxe Music
@@ -970,7 +968,6 @@ http://dlhls.cdn.zhanqi.tv/zqlive/49427_jmACJ.m3u8
 http://dlhls.cdn.zhanqi.tv/zqlive/35349_iXsXw.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="http://www.enjoymillvalley.com/uploads/2/5/8/5/25857490/2018-movies-in-the-park_orig.jpg" group-title="24/7 MANDARIN",Top Movies 5
 http://dlhls.cdn.zhanqi.tv/zqlive/7032_0s2qn_1024/index.m3u8
-
 #EXTINF:-1 tvg-logo="https://wwwimage-secure.cbsstatic.com/thumbnails/photos/w1200-h630-c1200:630/blog/87fdad6e1b37da4a_cbs_sports_hq_1920.jpg" group-title="USA GEO",CBS Sports HQ (Geo)
 https://cbssportsdc-i.akamaihd.net/hls/live/518856/dc_1/desktop.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://upload.wikimedia.org/wikipedia/en/0/09/Charge%21_network_logo.png" group-title="USA GEO",Charge! (Geo)
@@ -1001,7 +998,6 @@ http://live-cdn.pbskids.org/out/u/pst.m3u8
 http://195.181.169.148/TBS_Eng/tracks-v1a1/mono.m3u8
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/8/85/Sony_Movie_Channel.png" group-title="USA GEO",Sony Movie Channel (Geo)
 http://yipcontent-lh.akamaihd.net/i/sonymoviechannel_1@569927/master.m3u8
-
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="http://www.fibreop.ca/binaries/small/content/gallery/common_en/tv/channel-logos/cbcnews-300.png" group-title="CANADA GEO",CBC News Network (Geo)
 https://livecbcdai-i.akamaihd.net/hls/live/567245/event2/CBCNN/master6.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/CHCH2010.svg/1200px-CHCH2010.svg.png" group-title="CANADA GEO",CHCH (Geo)

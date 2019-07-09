@@ -3,7 +3,8 @@ import os
 import work2
 import pymongo
 import re
-
+import protocol
+from pprint import pprint
 # remove empty lines in the file
 def remove_empty_lines(filename):
     if not os.path.isfile(filename):
@@ -18,53 +19,62 @@ def remove_empty_lines(filename):
 
 
 # remove any pattern in the file
-def remove_ABCs(mylinesa, pattern1):
+'''def remove_ABCs(mylinesa, pattern1):
     pattern = re.compile(pattern1)
     for line in mylinesa:
         if pattern.match(line):
             mylinesa.remove(line)
     return mylinesa
+    def remove_different(mylinesa):
+    it = iter(mylinesa)
+    for i in it:
+        a = i
+        b = next(it)
+        if a.startswith("#EXTINF") and b.endswith("m3u8"):
+           pass
+        else:
+            mylinesa.remove(a)
+            mylinesa.remove(b)
 
-'''def remove_2ABCs(mylinesa, pattern1):
-    pattern = re.compile(pattern1)
-    for i in range(len(mylinesa)):
-        if pattern.match(mylinesa[i]):
-            mylinesa.remove(mylinesa[i])
-            mylinesa.remove(mylinesa[i-1])
-    return mylinesa'''
+    return mylinesa '''
 
-remove_empty_lines("m3files_12.txt")
+remove_empty_lines("m3files_9.txt")
 a = 0
-mylines, channel, listo = [], [], []
-with open("m3files_12.txt", 'rt') as myfile:
+mylines, channel, listo, mylines2 = [], [], [], []
+with open("m3files_9.txt", 'rt') as myfile:
     for line in myfile:
-        mylines.append(line)
-mylines = remove_ABCs(mylines, "^[A-Z]\)\.$")
-mylines = remove_ABCs(mylines, "^#EXTM3U$")
-# mylines = remove_2ABCs(mylines, "^http.*\.mp3$")
-if "#EXTINF:-1" in mylines[0] or "#EXTINF:-1" in mylines[1] or "#EXTINF:-1" in mylines[2]:
+        mylines2.append(line)
+
+
+for i in range(len(mylines2)):
+    if mylines2[i].startswith(protocol.extinf):
+        if mylines2[i + 1].startswith("http") and ".m3u8" in mylines2[i + 1]:
+            mylines.append(mylines2[i])
+            mylines.append(mylines2[i + 1])
+
+print(mylines)
+if mylines != []:
     for i in range(len(mylines)):
         if mylines[i].startswith("#EXTINF:"):
             y = mylines[i].split("group-title=", 1)[1]
             # z = re.findall(r'"(.*?)"', y)
             grp = y.rstrip()
-            if channel == []:
-                ch = grp.split(",", 1)[1]
-            else:
-                ch = channel[a - 1].rstrip()
+            ch = grp.split(",", 1)[1]
             m3u = mylines[i + 1].rstrip()
             # print(ch)
             # print(ch, grp, m3u)
-            array2 = []
             array2 = [ch, grp, m3u]
             listo.append(array2)
         elif mylines[i].startswith("http") or mylines[i].startswith("rtmp") or mylines[i].startswith("mms") or mylines[i].startswith("rtsp"):
             pass
-        else:
-            channel.append(mylines[i])
-            a += 1
+       # else:
+       #     channel.append(mylines[i])
+        #    a += 1
 else:
-    grp = "default"
+
+    print("Incorrect File format ")
+
+    '''grp = "default"
     i = 0
     while (i < len(mylines)):
         if not mylines[i].startswith("http"):
@@ -74,7 +84,7 @@ else:
         m3u = mylines[i].rstrip()
         array2 = [ch, grp, m3u]
         listo.append(array2)
-        i += 1
+        i += 1'''
 
 # listo should be 2 dimensional array.
 def dicty(array1):
@@ -99,26 +109,28 @@ def dicty(array1):
             for m31, m32 in m3.items():
                 # print(new_dict[cha][gt])
                 # print(m32)
-                dicta = work2.M3dict(m31)
+                dicta = work2.M3dict(m31, set())
                 new_dict[cha][gt][m31] = dicta.getfiles()
                 print(m31)
 
     return new_dict
 
-
 m3u8l = dicty(listo)
+if m3u8l != {}:
+    def convertdot(d):
+        new = {}
+        for k, v in d.items():
+            if isinstance(v, dict):
+                v = convertdot(v)
+            new[k.replace('.', '__DOT__')] = v
+        return new
 
-def convertdot(d):
-    new = {}
-    for k, v in d.items():
-        if isinstance(v, dict):
-            v = convertdot(v)
-        new[k.replace('.', '__DOT__')] = v
-    return new
-m3u8d = convertdot(m3u8l)
-print(m3u8d)
 
-myclient = pymongo.MongoClient("mongodb://192.168.5.157:27017/")
-mydb = myclient["mydatabase"]
-mycol = mydb["m3u8_files"]
-x = mycol.insert_one(m3u8d)
+    m3u8d = convertdot(m3u8l)
+    print(m3u8d)
+
+    myclient = pymongo.MongoClient("mongodb://192.168.5.157:27017/")
+    mydb = myclient["mydatabase"]
+    mycol = mydb["m3u8_files"]
+    x = mycol.insert_one(m3u8d)
+

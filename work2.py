@@ -6,17 +6,19 @@ import http
 import re
 from typing import Any, Union, Tuple, Dict
 import protocol
+from pprint import pprint
 
 class M3dict:
     # returns a dictionary and input is a m3u8 link.
     m3url: object
     status: Union[bool, Tuple[str, Any]]
 
-    def __init__(self, m3url, metad: object = None):
+    def __init__(self, m3url, look_up_set,  metad: object = None):
         self.dict = {}
         self.m3url = m3url
         self.url = str(m3url.rpartition('/')[0])
         self.metad = metad
+        self.look_up_set = set(look_up_set)
         self.requrl = None
 
     # for m3u8 files
@@ -80,8 +82,8 @@ class M3dict:
             elif protocol.ext_x_stream_inf in mylineso:
                 # m3u8 file so do the .m3u8 file reading
                 # just stream files reading
-                dicto = {}
-                # print("Im in m3u8 file", self.m3url)
+
+
                 dicto = self.m3_stream(mylineso)
                 self.dict[self.m3url] = {}
                 self.dict = dicto
@@ -149,8 +151,9 @@ class M3dict:
                 else:
                     mylines[i + 1] = self.url + '/' + mylines[i + 1]
                 # print("I built m3u8 urls too  " + mylines[i + 1])
-                Fire = M3dict(mylines[i + 1], metadata)
-                dicta[mylines[i + 1]] = Fire.getfiles()
+                if mylines[i + 1] not in self.look_up_set:
+                    Fire = M3dict(mylines[i + 1], metadata)
+                    dicta[mylines[i + 1]] = Fire.getfiles()
             else:
                 # skipping audio files for now
                 pass

@@ -116,26 +116,14 @@ http://82.76.40.76/digi24edge/digi24hdhqhls/index.m3u8
 http://46.55.111.242:8080/Rezina.m3u8?fluxustv.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://i.imgur.com/PTsws8f.png" group-title="ROMANIA",Iasi TV Life
 http://webmobile.xdev.ro:81/tv24/playlist.m3u8?time=1464028219168
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://i.imgur.com/pNXCgAi.png" group-title="ROMANIA",Informatia TV
-http://s1.streamnet.ro:8014/stream.flv
-#EXTINF:-1 tvg-logo="https://i.imgur.com/FWM790Y.png" group-title="ROMANIA",Pro TV News
-http://stream1.protv.ro/news/stream:1.stream/chunklist_w1582750279.m3u8?fluxustv.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/Ae1Klb2.png" group-title="ROMANIA",Realitatea TV
 http://livestream.realitatea.net/livestream/liverealitatea.stream/playlist.m3u8?fluxustv.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/6e9Q5xV.jpg" group-title="ROMANIA",Romania TV
 http://ppext.arktv.ro/hls/channel6/adaptive.m3u8?fluxustv.m3u8
-#EXTINF:-1 tvg-logo="https://i.imgur.com/qFE5PUx.png" group-title="ROMANIA",Sangeorz TV
-http://s2.streamnet.ro:8035/stream.flv
 #EXTINF:-1 tvg-logo="https://i.imgur.com/3LdXQxm.png" group-title="ROMANIA",Somax TV
 http://webmobile.xdev.ro:81/tv12/playlist.m3u8?fluxustv.m3u8
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://i.imgur.com/YBV70kC.png" group-title="ROMANIA",Tele M Neamt
-http://telem.ambra.ro
-#EXTINF:-1 tvg-logo="https://i.imgur.com/qSd8DTI.png" group-title="ROMANIA",Telestar 1
-http://193.34.109.10:8090
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://i.imgur.com/zO9RN9V.png" group-title="ROMANIA",TV Kit
 http://webmobile.xdev.ro:81/tv9/playlist.m3u8
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://i.imgur.com/6T7w975.png" group-title="ROMANIA",TVPlus Suceava
-http://85.186.146.34:8080
 #EXTINF:-1 tvg-logo="https://i.imgur.com/S4VBEgF.png" group-title="ROMANIA",TVR HD
 http://89.136.209.26:1935/liveedge/TVRHD.stream/playlist.m3u8?fluxustv.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/XSilDzX.png" group-title="ROMANIA",TVR 1
@@ -154,8 +142,6 @@ http://mn-nl.mncdn.com/tvr_iasi/smil:TVRIASI.smil/playlist.m3u8?fluxustv.m3u8
 http://mn-nl.mncdn.com/tvr_hd/smil:TVRHD.smil/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/zFYfPjp.png" group-title="ROMANIA",TVR Targu Mures
 http://89.136.209.25:1935/cartons/mp4:tvr-plus-geoip.mp4/playlist.m3u8?fluxustv.m3u8
-#EXTINF:-1 tvg-logo="https://i.imgur.com/zFYfPjp.png" group-title="ROMANIA",TVR Timisoara
-http://mn-nl.mncdn.com/tvr_timisoara/smil:TVRTIMISOARA.smil/playlist.m3u8?fluxustv.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/jcWem0p.png" group-title="ROMANIA",TVRi
 http://mn-nl.mncdn.com/tvr_i/smil:TVRI.smil/playlist.m3u8?fluxustv.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://i.imgur.com/KGLHMyB.png" group-title="ROMANIA",UTV (Opt-1)
@@ -226,14 +212,6 @@ http://w10.streamgb.com:1935/dugaplus/dugaplus/playlist.m3u8
 http://195.252.96.7:1935/webstudiob/webstudiob.stream/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/LwFXI6j.png" group-title="SERBIA",Teslavision
 http://192.99.6.113:1935/liveTarget/TeslaVision.stream/chunklist_w1459988322.m3u8
-#EXTINF:-1 tvg-logo="https://i.imgur.com/GgT6xpV.png" group-title="SERBIA",TV Puls
-http://stream.rtvpuls.com/broadcasting
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="http://www.softskillsacademy.rs/assets/uploads/2016/05/KCN_KOPERNIKUS_bez-1_update-11.png" group-title="SERBIA",TVKopernikus 1
-http://212.200.102.3:5000/rtp/239.0.0.1:5000
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="http://www.softskillsacademy.rs/assets/uploads/2016/05/KCN_KOPERNIKUS_bez-1_update-11.png" group-title="SERBIA",TVKopernikus 2
-http://212.200.102.3:5000/rtp/239.0.0.2:5000
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="http://www.softskillsacademy.rs/assets/uploads/2016/05/KCN_KOPERNIKUS_bez-1_update-11.png" group-title="SERBIA",TVKopernikus 3
-http://212.200.102.3:5000/rtp/239.0.0.3:5000
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://i.imgur.com/qPCLrR9.png" group-title="BOSNIA",777 Tehnika TV
 http://109.123.70.27:1935/tehnikatv777/tehnikatv777/playlist.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://upload.wikimedia.org/wikipedia/de/4/4b/Aljazeera_Balkans_alternativ.png" group-title="BOSNIA",Al Jazeera Balkans
@@ -252,12 +230,8 @@ http://141.136.14.18/kanal1/kanal1.m3u8
 http://141.136.14.18/kanal1/kanal1_1500/index.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://i.imgur.com/h1QsRqL.png" group-title="CZECHIA",Elektrika TV
 http://rtmp.elektrika.cz/live/myStream.sdp/playlist.m3u8
-#EXTINF:-1 tvg-logo="https://i.imgur.com/bDQDSXL.png" group-title="CZECHIA",Prima Love
-http://83.240.95.152:4022/udp/239.1.1.81:11111
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://i.imgur.com/7R9K4qa.png" group-title="CZECHIA",Retro
 http://stream.mediawork.cz/retrotv/retrotvHQ1/playlist.m3u8
-#EXTINF:-1 tvg-logo="https://i.imgur.com/6EcJluF.png" group-title="CZECHIA",TV Morava
-http://stream.redigy.cz:1934/tvm.flv
 #EXTINF:-1 tvg-logo="https://i.imgur.com/dKuZqZZ.png" group-title="SLOVENIA",TV Koper Capodistria (Opt-1)
 https://rtvslolive.akamaized.net/hls/live/689305/tv_kp/tvkp_360p/chunklist.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/dKuZqZZ.png" group-title="SLOVENIA",TV Koper Capodistria (Opt-2)
@@ -266,16 +240,6 @@ http://213.162.202.9:8000/play/a01e/index.m3u8
 https://rtvslolive.akamaized.net/hls/live/689305/tv_mb/tvmb_360p/chunklist.m3u8
 #EXTINF:-1 tvg-logo="http://company.fashiontv.com/wp-content/uploads/2017/03/fashiontv_logo_blue_vertical.png" group-title="SLOVAKIA",Fashion TV
 http://lb.streaming.sk/fashiontv/stream/playlist.m3u8?fluxustv.m3u8
-#EXTINF:-1 tvg-logo="https://i.imgur.com/nuzxcNz.png" group-title="SLOVAKIA",Kezmarska TV
-http://213.81.153.221:8080/kezmarok
-#EXTINF:-1 tvg-logo="https://i.imgur.com/ZDSaV7V.png" group-title="SLOVAKIA",Klik TV
-http://92.62.234.201:11234
-#EXTINF:-1 tvg-logo="https://i.imgur.com/ofnIsfN.png" group-title="SLOVAKIA",Mestska Televizia Trnava
-http://213.81.153.221:8080/trnava
-#EXTINF:-1 tvg-logo="https://i.imgur.com/HoaqXik.png" group-title="SLOVAKIA",Plus
-https://nn.geo.joj.sk/live/hls/jojplus-540.m3u8?fluxustv.m3u8
-#EXTINF:-1 tvg-logo="https://i.imgur.com/rGDSBm4.png" group-title="SLOVAKIA",RTV Krea
-http://213.81.153.221:8080/galanta
 #EXTINF:-1 tvg-logo="https://i.imgur.com/uVwAEMN.png" group-title="SLOVAKIA",RTVS 1 (SD)
 https://rtvslolive.akamaized.net/hls/live/584144/tv_slo1/slo1_360p/chunklist.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/uVwAEMN.png" group-title="SLOVAKIA",RTVS 1 (HD)
@@ -298,20 +262,10 @@ http://109.74.145.11:1935/tv8/ngrp:tv8.stream_all/playlist.m3u8
 http://109.74.145.11:1935/tv8/mp4:tv8.stream_360p/playlist.m3u8?fluxustv.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://i.imgur.com/Re3jtd7.png" group-title="SLOVAKIA",TV Lux
 http://live.tvlux.sk:1935/lux/lux.stream_360p/chunklist_w1295439472.m3u8
-#EXTINF:-1 tvg-logo="https://i.imgur.com/s2Yr8pv.png" group-title="SLOVAKIA",TV Central Nitra
-http://213.81.153.221:8080/cetv
-#EXTINF:-1 tvg-logo="https://i.imgur.com/oVBCXY3.png" group-title="SLOVAKIA",TV Hronka
-http://213.81.153.221:8080/hronka
 #EXTINF:-1 tvg-logo="https://i.imgur.com/1IaHYCS.png" group-title="SLOVAKIA",TV JOJ
 http://nn.geo.joj.sk/hls/joj-720.m3u8?fluxustv.m3u8
-#EXTINF:-1 tvg-logo="https://i.imgur.com/uNMI7LF.png" group-title="SLOVAKIA",TV Kosice
-http://213.81.153.221:8080/nasa
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://i.imgur.com/HiXX5e5.png" group-title="SLOVAKIA",TV Nitricka
 http://195.168.28.243/hls-live/livepkgr/_definst_/liveevent/livestream3.m3u8
-#EXTINF:-1 tvg-logo="https://i.imgur.com/xxwAaG1.png" group-title="SLOVAKIA",TV Poprad
-http://213.81.153.221:8080/poprad
-#EXTINF:-1 tvg-logo="https://i.imgur.com/r5fmPPB.png" group-title="SLOVAKIA",TV Ruzinov
-http://213.81.153.221:8080/ruzinov
 #EXTINF:-1 tvg-logo="https://i.imgur.com/CivJqLv.png" group-title="SLOVAKIA",TV Wau
 https://nn.geo.joj.sk/live/wau-index.m3u8?fluxustv.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/A45UVzJ.png" group-title="POLAND",CW 24
