@@ -38,10 +38,10 @@ def remove_empty_lines(filename):
 
     return mylinesa '''
 
-remove_empty_lines("m3files_9.txt")
+remove_empty_lines("m3files_8.txt")
 a = 0
 mylines, channel, listo, mylines2 = [], [], [], []
-with open("m3files_9.txt", 'rt') as myfile:
+with open("m3files_8.txt", 'rt') as myfile:
     for line in myfile:
         mylines2.append(line)
 
@@ -109,7 +109,7 @@ def dicty(array1):
             for m31, m32 in m3.items():
                 # print(new_dict[cha][gt])
                 # print(m32)
-                dicta = work2.M3dict(m31, set())
+                dicta = work2.M3dict(m31, set(), 0)
                 new_dict[cha][gt][m31] = dicta.getfiles()
                 print(m31)
 

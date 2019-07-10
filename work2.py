@@ -13,11 +13,12 @@ class M3dict:
     m3url: object
     status: Union[bool, Tuple[str, Any]]
 
-    def __init__(self, m3url, look_up_set,  metad: object = None):
+    def __init__(self, m3url, look_up_set, counter,  metad: object = None):
         self.dict = {}
         self.m3url = m3url
         self.url = str(m3url.rpartition('/')[0])
         self.metad = metad
+        self.counter = counter
         self.look_up_set = set(look_up_set)
         self.requrl = None
 
@@ -57,6 +58,7 @@ class M3dict:
             return self.verifyurl()
 
     def getfiles(self):
+        self.counter += 1
         if "Error" not in self.urlopen():
             mylineso = self.urlopen()
             if protocol.extinf in mylineso:
@@ -151,9 +153,10 @@ class M3dict:
                 else:
                     mylines[i + 1] = self.url + '/' + mylines[i + 1]
                 # print("I built m3u8 urls too  " + mylines[i + 1])
-                if mylines[i + 1] not in self.look_up_set:
+                if mylines[i + 1] not in self.look_up_set or self.counter<2:
                     self.look_up_set.add(mylines[i+1])
-                    Fire = M3dict(mylines[i + 1], self.look_up_set, metadata)
+
+                    Fire = M3dict(mylines[i + 1], self.look_up_set, self.counter,  metadata)
                     dicta[mylines[i + 1]] = Fire.getfiles()
             else:
                 # skipping audio files for now
