@@ -17,75 +17,32 @@ def remove_empty_lines(filename):
         filehandle.writelines(lines)
 
 
-# remove any pattern in the file
-'''def remove_ABCs(mylinesa, pattern1):
-    pattern = re.compile(pattern1)
-    for line in mylinesa:
-        if pattern.match(line):
-            mylinesa.remove(line)
-    return mylinesa
-    def remove_different(mylinesa):
-    it = iter(mylinesa)
-    for i in it:
-        a = i
-        b = next(it)
-        if a.startswith("#EXTINF") and b.endswith("m3u8"):
-           pass
-        else:
-            mylinesa.remove(a)
-            mylinesa.remove(b)
-
-    return mylinesa '''
-
-remove_empty_lines("m3files_8.txt")
+remove_empty_lines("m3files_4.txt")
 a = 0
 mylines, channel, listo, mylines2 = [], [], [], []
-with open("m3files_8.txt", 'rt') as myfile:
+with open("m3files_4.txt", 'rt') as myfile:
     for line in myfile:
         mylines2.append(line)
 
-
+# extract m3u8 links only. (flexible)
 for i in range(len(mylines2)):
     if mylines2[i].startswith(protocol.extinf):
         if mylines2[i + 1].startswith("http") and ".m3u8" in mylines2[i + 1]:
-            mylines.append(mylines2[i])
             mylines.append(mylines2[i + 1])
 
-print(mylines)
 if mylines != []:
     for i in range(len(mylines)):
-        if mylines[i].startswith("#EXTINF:"):
-            y = mylines[i].split("group-title=", 1)[1]
-            # z = re.findall(r'"(.*?)"', y)
-            grp = y.rstrip()
-            ch = grp.split(",", 1)[1]
-            m3u = mylines[i + 1].rstrip()
-            # print(ch)
-            # print(ch, grp, m3u)
-            array2 = [ch, grp, m3u]
-            listo.append(array2)
-        elif mylines[i].startswith("http") or mylines[i].startswith("rtmp") or mylines[i].startswith("mms") or mylines[i].startswith("rtsp"):
-            pass
-       # else:
-       #     channel.append(mylines[i])
-        #    a += 1
+        grp = "default_grp%d" %(i)
+        ch = "default_ch%d" %(i)
+        m3u = mylines[i].rstrip()
+        # print(ch)
+        # print(ch, grp, m3u)
+        array2 = [ch, grp, m3u]
+        listo.append(array2)
 else:
 
     print("Incorrect File format ")
 
-    '''grp = "default"
-    i = 0
-    while (i < len(mylines)):
-        if not mylines[i].startswith("http"):
-            ch = mylines[i].rstrip()
-            i += 1
-        array2 = []
-        m3u = mylines[i].rstrip()
-        array2 = [ch, grp, m3u]
-        listo.append(array2)
-        i += 1'''
-
-# listo should be 2 dimensional array.
 def dicty(array1):
     new_dict = {}
     for m in range(len(array1)):
@@ -132,4 +89,3 @@ if m3u8l != {}:
     mydb = myclient["mydatabase"]
     mycol = mydb["m3u8_files"]
     x = mycol.insert_one(m3u8d)
-
