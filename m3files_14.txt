@@ -25,10 +25,6 @@ http://62.113.210.250/medienasa-live/ok-dessau_high/hasbahca.m3u8
 http://stream-cdn.ok54.de/hls/ok54.m3u8?fluxustv.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/K1hkyd7.png" group-title="GERMANY",Oldenburg Eins TV
 http://188.40.16.94:1935/live/studio/chunklist_w27232713.m3u8?fluxustv.m3u8
-#EXTINF:-1 tvg-logo="https://i.imgur.com/1NGWR7F.png" group-title="GERMANY",Parlamentsfernsehen 1
-https://c13014-l-hls.u.core.cdn.streamfarm.net/1000153copo/hk1.m3u8
-#EXTINF:-1 tvg-logo="https://i.imgur.com/1NGWR7F.png" group-title="GERMANY",Parlamentsfernsehen 2
-https://c13014-l-hls.u.core.cdn.streamfarm.net/1000153copo/hk2.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/AjN5EBF.png" group-title="GERMANY",Potsdam TV
 https://sdn-global-live-http-cache.3qsdn.com/live/_definst_/mp4:5654_9rRqfHQLh4Yd6pm/playlist.m3u8?fluxustv.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/NUP8ZBb.png" group-title="GERMANY",RAN1 Regionalfernsehen

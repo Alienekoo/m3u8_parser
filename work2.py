@@ -109,11 +109,20 @@ class M3dict:
                     pass
                 elif mylines[i + 1].startswith(".."):
                     mylines[i + 1] = self.url + mylines[i + 1].replace("../..", '')
+                elif mylines[i+1].startswith("/"):
+                    check = str(self.url.rpartition('/')[2])
+                    substr = str(self.url.rpartition('/')[0])
+                    check2 = str(substr.rpartition('/')[2])
+                    if check in mylines[i+1]:
+                        mylines[i+1] = str(mylines[i+1].rpartition(check)[2])
+                    elif check2 in mylines[i+1]:
+                        mylines[i + 1] = str(mylines[i + 1].rpartition(check2)[2])
+                    mylines[i+1] = self.url + mylines[i+1]
                 else:
                     mylines[i + 1] = self.url + '/' + mylines[i + 1]
                 status = self.verifyurlo(mylines[i + 1])
                 time = datetime.datetime.now()
-                # print(status)
+                print(mylines[i + 1])
                 ts.append((mylines[i + 1], time, status))
         return ts
 
@@ -130,6 +139,15 @@ class M3dict:
                     pass
                 elif mylines[i + 2].startswith(".."):
                     mylines[i + 2] = self.url + mylines[i + 2].replace("../..", '')
+                elif mylines[i+1].startswith("/"):
+                    check = str(self.url.rpartition('/')[2])
+                    substr = str(self.url.rpartition('/')[0])
+                    check2 = str(substr.rpartition('/')[2])
+                    if check in mylines[i+1]:
+                        mylines[i+1] = str(mylines[i+1].rpartition(check)[2])
+                    elif check2 in mylines[i+1]:
+                        mylines[i + 1] = str(mylines[i + 1].rpartition(check2)[2])
+                    mylines[i+1] = self.url + mylines[i+1]
                 else:
                     mylines[i + 2] = self.url + '/' + mylines[i + 2]
                 status = self.verifyurlo(mylines[i + 2])
