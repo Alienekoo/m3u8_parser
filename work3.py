@@ -17,10 +17,10 @@ def remove_empty_lines(filename):
         filehandle.writelines(lines)
 
 
-remove_empty_lines("m3files_4.txt")
+remove_empty_lines("m3files_14.txt")
 a = 0
 mylines, channel, listo, mylines2 = [], [], [], []
-with open("m3files_4.txt", 'rt') as myfile:
+with open("m3files_14.txt", 'rt') as myfile:
     for line in myfile:
         mylines2.append(line)
 
