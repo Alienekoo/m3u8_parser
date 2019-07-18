@@ -4,6 +4,10 @@ import pymongo
 import re
 import protocol
 from pprint import pprint
+
+# This file takes in a .txt file of list of m3u8's and their data. It makes a dictionary of it which contains channel name, group title, m3u8 URLs, child m3u8 URLs(if any), .ts URLs.
+# It uploads the dictionary to pymongo DataBase
+
 # remove empty lines in the file
 def remove_empty_lines(filename):
     if not os.path.isfile(filename):
@@ -37,21 +41,56 @@ def remove_empty_lines(filename):
 
     return mylinesa '''
 
-remove_empty_lines("m3files_8.txt")
+# takes in a nested list : [[channel, group title, m3u8 URL], ...] that is extracted from the text file.
+# Processes the list and outputs a dictionary : {channel : {grpup title : m3u8 URl : {child m3u8 URLs : {'tslist' : [.ts files], 'metadata' :[]}, ..}, ..}, ..}
+def dicty(array1):
+    new_dict = {}
+    for m in range(len(array1)):
+        if new_dict.get(array1[m][0]) == None:
+            new_dict[array1[m][0]] = {}
+            new_dict[array1[m][0]][array1[m][1]] = {}
+            new_dict[array1[m][0]][array1[m][1]][array1[m][2]] = {}
+        elif new_dict.get(array1[m][0]) != None:
+            if new_dict.get(array1[m][0], {}).get(array1[m][1]) == None:
+                new_dict[array1[m][0]][array1[m][1]] = {}
+                new_dict[array1[m][0]][array1[m][1]][array1[m][2]] = {}
+            else:
+                # print("test", new_dict[array1[m][0]][array1[m][1]])
+                pass
+        else:
+            print("check again")
+
+    for cha, grpt in new_dict.items():
+        for gt, m3 in grpt.items():
+            for m31, m32 in m3.items():
+                # print(new_dict[cha][gt])
+                # print(m32)
+                dicta = work2.M3dict(m31, set(), 0)
+                new_dict[cha][gt][m31] = dicta.getfiles()
+                print(m31)
+
+    return new_dict
+
+# main code
+
+remove_empty_lines("m3files_12.txt")
 a = 0
+# reads the text file and saves all the lines in a list
+
 mylines, channel, listo, mylines2 = [], [], [], []
-with open("m3files_8.txt", 'rt') as myfile:
+with open("m3files_12.txt", 'rt') as myfile:
     for line in myfile:
         mylines2.append(line)
-
-
+# filters m3u8 files and the info relate to it
 for i in range(len(mylines2)):
     if mylines2[i].startswith(protocol.extinf):
         if mylines2[i + 1].startswith("http") and ".m3u8" in mylines2[i + 1]:
             mylines.append(mylines2[i])
             mylines.append(mylines2[i + 1])
 
-print(mylines)
+
+# checks if the format is correct and reads the lines in the list and collects all the data like channel name, group title and m3u8 URL.
+# saves the collected data into a nested list. => listo
 if mylines != []:
     for i in range(len(mylines)):
         if mylines[i].startswith("#EXTINF:"):
@@ -84,37 +123,11 @@ else:
         array2 = [ch, grp, m3u]
         listo.append(array2)
         i += 1'''
-
-# listo should be 2 dimensional array.
-def dicty(array1):
-    new_dict = {}
-    for m in range(len(array1)):
-        if new_dict.get(array1[m][0]) == None:
-            new_dict[array1[m][0]] = {}
-            new_dict[array1[m][0]][array1[m][1]] = {}
-            new_dict[array1[m][0]][array1[m][1]][array1[m][2]] = {}
-        elif new_dict.get(array1[m][0]) != None:
-            if new_dict.get(array1[m][0], {}).get(array1[m][1]) == None:
-                new_dict[array1[m][0]][array1[m][1]] = {}
-                new_dict[array1[m][0]][array1[m][1]][array1[m][2]] = {}
-            else:
-                # print("test", new_dict[array1[m][0]][array1[m][1]])
-                pass
-        else:
-            print("check again")
-
-    for cha, grpt in new_dict.items():
-        for gt, m3 in grpt.items():
-            for m31, m32 in m3.items():
-                # print(new_dict[cha][gt])
-                # print(m32)
-                dicta = work2.M3dict(m31, set(), 0)
-                new_dict[cha][gt][m31] = dicta.getfiles()
-                print(m31)
-
-    return new_dict
-
+# using the deficnition
 m3u8l = dicty(listo)
+
+# converting all the keys of the dictionary to confirm into pymongo's format: "." to "_DOT_"
+# uploads the converted dictionary to the pymongo database
 if m3u8l != {}:
     def convertdot(d):
         new = {}

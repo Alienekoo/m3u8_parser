@@ -8,8 +8,11 @@ from typing import Any, Union, Tuple, Dict
 import protocol
 from pprint import pprint
 
+
+# returns a dictionary: {child m3u8 : {tslist :[], metadat: []}} and input is the main m3u8 link.
+
 class M3dict:
-    # returns a dictionary and input is a m3u8 link.
+
     m3url: object
     status: Union[bool, Tuple[str, Any]]
 
@@ -98,7 +101,7 @@ class M3dict:
             return self.verifyurl()
 
     def tsread(self, mylineso):
-        # returns a list of tuples
+        # returns a list of tuples of ts files
         print("I entered a ts file")
         mylines = []
         mylines = list(map(str.strip, mylineso.split('\n')))
@@ -127,7 +130,7 @@ class M3dict:
         return ts
 
     def tskeyread(self, mylineso):
-        # returns a list of tuples
+        # returns a list of tuples of ts files with keys
         mylines = []
         mylines = list(map(str.strip, mylineso.split('\n')))
         mylines = self.remove_line(mylines, protocol.ext_x_program_date_time)
@@ -155,7 +158,7 @@ class M3dict:
         return ts
 
     def m3_stream(self, mylineso):
-        # returns a dictionary
+        # returns a dictionary of child m3u8 and ts files in them
         mylines = []
         dicta = {}
         mylines = list(map(str.strip, mylineso.split('\n')))
@@ -183,20 +186,4 @@ class M3dict:
                 pass
         return dicta
 
-    def remove_line(self, mylinesa, pattern):
-        # input: list of lines and the pattern to be searched and removed
-        i = 0
-        pattern = re.compile(pattern)
-        for line in mylinesa:
-            if pattern.match(line):
-                mylinesa.remove(line)
-            i += 1
-        return mylinesa
 
-    def convertdot(self, d):
-        new = {}
-        for k, v in d.items():
-            if isinstance(v, dict):
-                v = self.convertdot(v)
-            new[k.replace('.', '__DOT__')] = v
-        return new

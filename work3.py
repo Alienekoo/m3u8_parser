@@ -4,6 +4,9 @@ import pymongo
 import re
 import protocol
 from pprint import pprint
+
+# similar to work1.py and here we only take m3u8 URLs but not the EXTINF information that gives channel name and group title.
+
 # remove empty lines in the file
 def remove_empty_lines(filename):
     if not os.path.isfile(filename):
@@ -17,10 +20,10 @@ def remove_empty_lines(filename):
         filehandle.writelines(lines)
 
 
-remove_empty_lines("m3files_14.txt")
+remove_empty_lines("m3files_12.txt")
 a = 0
 mylines, channel, listo, mylines2 = [], [], [], []
-with open("problematic_m3files_txt", 'rt') as myfile:
+with open("m3files_12.txt", 'rt') as myfile:
     for line in myfile:
         mylines2.append(line)
 
